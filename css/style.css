@@ -1,0 +1,321 @@
+/*----------------------------------------- Variable couleur -----------------------------------------*/
+
+* {
+    --bleu: #0065FC;
+    --bleuclair: #DEEBFF;
+    --gris: #F2F2F2;
+    font-family: 'Raleway', sans-serif;
+    /* Police 'Raleway' pour l'ensemble du site */
+}
+
+body {
+    margin: 0;
+}
+
+/* ********************** NAV ******************************* */
+
+/* <!--Logo--> */
+
+.logo-reservia img {
+    width: 90px;
+}
+
+.logo-reservia {
+    margin-left: 20px;
+}
+
+/* <!--Logo--> */
+
+/* <!--Menu--> */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.navbar {
+    flex-basis: 100%;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    padding-left: 0;
+}
+
+.navbar a {
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+}
+
+.navbar li {
+    width: 50%;
+    padding-bottom: 15px;
+    text-align: center;
+    list-style-type: none;
+    font-size: 1.1em;
+    border-bottom: solid;
+    border-color: var(--gris);
+}
+
+.navbar li:hover {
+    border-color: var(--bleu);
+    transition: 0.7s;
+}
+
+.navbar li:hover>a {
+    color: var(--bleu);
+    transition: 0.7s;
+}
+
+/* <!--Menu--> */
+
+/* <!--inscription--> */
+
+.register {
+    margin-right: 20px;
+}
+
+.register a {
+    color: var(--bleu);
+    cursor: pointer;
+    font-weight: 800;
+}
+
+/* <!--inscription--> */
+
+/* ********************** FIN NAV ************************** */
+
+/* ********************** HEADER *************************** */
+
+header {
+    margin: 20px;
+}
+
+/* <!--Titre & sous titre--> */
+
+h1 {
+    margin: 0;
+    font-size: 1.3em;
+}
+
+/* <!--Titre & sous titre--> */
+
+/* <!--Recherche--> */
+
+.recherche-header {
+    margin-top: 30px;
+}
+
+.recherche-header form {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.location-icon .fa-map-marker-alt {
+    padding: 17px 20px;
+}
+
+.location-icon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--gris);
+    border-radius: 1em 0 0 1em;
+}
+
+#input-search {
+    flex: 1;
+    height: 50px;
+    max-width: 250px;
+    border: solid 1px var(--gris);
+}
+
+.search-button {
+    display: none;
+}
+
+.recherche-header button {
+    padding: 16px 17px;
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    border-radius: 1em;
+    background-color: var(--bleu);
+    color: white;
+    transform: translateX(-15px);
+}
+
+/* <!--Recherche--> */
+
+/* <!--Boutons de filtres--> */
+
+.filter-button-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    display: flex;
+    align-items: center;
+    margin: 10px 10px 10px 0px;
+    border-radius: 2em;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.filter-button-box h2 {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 800;
+    flex-basis: 100%;
+}
+
+.filter-icon {
+    width: 1em;
+    border-radius: 2em;
+    padding: 17px;
+    background-color: var(--bleuclair);
+}
+
+.filter-btn span {
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--gris);
+    border-radius: 2em;
+    padding: 13px 20px 13px 45px;
+    text-transform: capitalize;
+    font-weight: 800;
+    color: black;
+    margin-left: -40px;
+    z-index: -1;
+}
+
+.filter-btn i {
+    font-size: 15px;
+    color: var(--bleu);
+}
+
+.filter-btn:hover {
+    transition: all 0.3s;
+    z-index: 0;
+    background-color: var(--bleuclair);
+    transform: scale(1.05);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, .3);
+    text-shadow: 0px -1px 1px #bdb5b4, 1px 1px 1px white;
+}
+
+.filter-btn:active {
+    background-color: transparent;
+}
+
+/* <!--Boutons de filtres--> */
+
+/* <!--Information--> */
+
+.information {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.info-btn {
+    text-align: center;
+    padding: 10px 15px;
+    border: solid 1px var(--gris);
+    border-radius: 30px;
+    margin-right: 10px;
+    color: var(--bleu);
+}
+
+/* <!--Information--> */
+
+/* ********************** FIN HEADER *********************** */
+
+/* ********************** MAIN ***************************** */
+
+/* ********************** FIN MAIN ************************* */
+
+/* ********************** FOOTER *************************** */
+
+/* ********************** FIN FOOTER *********************** */
+
+/*Nous retrouvons 4 breaking-points :
+ - Les très petits écrans (0 px et 768 px)
+ - Tablettes (768 px - 991 px)
+ - Ordinateurs (992 px - 1199 px)
+ - Grands écrans d'ordinateurs et télévisions
+ */
+
+@media screen and (min-width:768px) {
+    /* ********************** NAV *************************** */
+    /* <!--Inscription--> */
+    .register {
+        order: 3;
+    }
+    /* <!--Inscription--> */
+    /* <!--Menu--> */
+    nav {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        margin-top: -15px;
+    }
+    .navbar li {
+        width: initial;
+        padding-bottom: 0;
+        margin: 0 20px;
+        border-bottom: none;
+        border-top: solid;
+        border-color: transparent;
+        padding: 38px 0;
+    }
+    .navbar ul {
+        justify-content: flex-end;
+        height: 100px;
+        align-items: center;
+        margin-right: 20px;
+    }
+    .navbar li:hover {
+        border-color: var(--bleu);
+        transition: 0.7s;
+    }
+    .navbar li:hover>a {
+        color: var(--bleu);
+        transition: 0.7s;
+    }
+    /* <!--Menu--> */
+    /* ********************** FIN NAV *************************** */
+    /* ********************** HEADER **************************** */
+    /* <!--Recherche--> */
+    .search-button {
+        display: block;
+    }
+    .phone-button.fas.fa-search {
+        display: none;
+    }
+    .recherche-header button {
+        width: 130px;
+        border-radius: 0 1em 1em 0;
+    }
+    /* <!--Recherche--> */
+    /* ********************** FIN HEADER *********************** */
+    /* ********************** MAIN ***************************** */
+    /* ********************** FIN MAIN ************************* */
+    /* ********************** FOOTER *************************** */
+    /* ********************** FIN FOOTER *********************** */
+}
+
+@media(min-width:768px) {}
+
+@media(min-width:992px) {}
+
+@media(min-width:1200px) {}
