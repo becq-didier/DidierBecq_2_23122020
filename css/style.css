@@ -8,20 +8,16 @@
     /* Police 'Raleway' pour l'ensemble du site */
 }
 
-body {
-    margin: 0;
-}
+/* ********************** HEADER *************************** */
 
-/* ********************** NAV ******************************* */
+header {
+    margin: 15px;
+}
 
 /* <!--Logo--> */
 
 .logo-reservia img {
-    width: 90px;
-}
-
-.logo-reservia {
-    margin-left: 20px;
+    width: 110px;
 }
 
 /* <!--Logo--> */
@@ -33,16 +29,17 @@ nav {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    margin-top: 25px;
 }
 
 .navbar {
     flex-basis: 100%;
+    margin-top: 25px;
 }
 
 .navbar ul {
     display: flex;
     justify-content: space-between;
+    margin: 0;
 }
 
 .navbar ul {
@@ -92,19 +89,15 @@ nav {
 
 /* <!--inscription--> */
 
-/* ********************** FIN NAV ************************** */
-
-/* ********************** HEADER *************************** */
-
-header {
-    margin: 20px;
-}
-
 /* <!--Titre & sous titre--> */
 
 h1 {
     margin: 0;
     font-size: 1.3em;
+}
+
+.title-header {
+    margin-top: 20px;
 }
 
 /* <!--Titre & sous titre--> */
@@ -163,18 +156,19 @@ h1 {
 .filter-button-box {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .filter-btn {
     display: flex;
     align-items: center;
-    margin: 10px 10px 10px 0px;
+    margin: 0 10px 10px 0;
     border-radius: 2em;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .filter-button-box h2 {
-    margin-top: 30px;
+    margin-top: 10px;
     font-size: 18px;
     font-weight: 800;
     flex-basis: 100%;
@@ -224,17 +218,28 @@ h1 {
 
 .information {
     display: flex;
-    align-items: center;
-    margin-top: 20px;
+    align-items: baseline;
+    margin-top: 11px;
+}
+
+.information p {
+    display: flex;
+    margin-top: 0;
+}
+
+.information i {
+    width: 10px;
+    padding: 8px;
 }
 
 .info-btn {
     text-align: center;
     padding: 10px 15px;
     border: solid 1px var(--gris);
-    border-radius: 30px;
+    border-radius: 50px;
     margin-right: 10px;
     color: var(--bleu);
+    font-size: 10px;
 }
 
 /* <!--Information--> */
@@ -250,14 +255,20 @@ h1 {
 /* ********************** FIN FOOTER *********************** */
 
 /*Nous retrouvons 4 breaking-points :
- - Les très petits écrans (0 px et 768 px)
- - Tablettes (768 px - 991 px)
- - Ordinateurs (992 px - 1199 px)
- - Grands écrans d'ordinateurs et télévisions
- */
+- Les très petits écrans (0 px et 768 px)
+- Tablettes (768 px - 991 px)
+- Ordinateurs (992 px - 1199 px)
+- Grands écrans d'ordinateurs et télévisions
+*/
 
 @media screen and (min-width:768px) {
-    /* ********************** NAV *************************** */
+    body {
+        margin-top: -50px;
+    }
+    /* ********************** HEADER **************************** */
+    header {
+        margin: 50px;
+    }
     /* <!--Inscription--> */
     .register {
         order: 3;
@@ -267,7 +278,10 @@ h1 {
     nav {
         justify-content: flex-start;
         flex-wrap: nowrap;
-        margin-top: -15px;
+        /* margin-top: -15px; */
+    }
+    .navbar {
+        margin-top: 0;
     }
     .navbar li {
         width: initial;
@@ -293,8 +307,11 @@ h1 {
         transition: 0.7s;
     }
     /* <!--Menu--> */
-    /* ********************** FIN NAV *************************** */
-    /* ********************** HEADER **************************** */
+    /* <!--Titre & sous titre--> */
+    .title-header {
+        margin-top: 0px;
+    }
+    /* <!--Titre & sous titre--> */
     /* <!--Recherche--> */
     .search-button {
         display: block;
@@ -307,6 +324,11 @@ h1 {
         border-radius: 0 1em 1em 0;
     }
     /* <!--Recherche--> */
+    /* <!--Boutons de filtres--> */
+    .filter-button-box h2 {
+        flex-basis: 90px;
+    }
+    /* <!--Boutons de filtres--> */
     /* ********************** FIN HEADER *********************** */
     /* ********************** MAIN ***************************** */
     /* ********************** FIN MAIN ************************* */
@@ -316,6 +338,12 @@ h1 {
 
 @media(min-width:768px) {}
 
-@media(min-width:992px) {}
+@media screen and (min-width:992px) {
+    
+}
 
-@media(min-width:1200px) {}
+@media screen and (min-width:1200px) {
+    body {
+        margin: -50px 10% 0 10%;
+    }
+}
