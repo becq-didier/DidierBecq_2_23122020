@@ -28,36 +28,40 @@ header {
 
 /* <!--Menu--> */
 
-nav {
+.navbar {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 
-.navbar {
+/* <!--Menu--> */
+
+/* <!--nav--> */
+
+nav {
     flex-basis: 100%;
     margin-top: 25px;
 }
 
-.navbar ul {
+nav ul {
     display: flex;
     justify-content: space-between;
     margin: 0;
 }
 
-.navbar ul {
+nav ul {
     padding-left: 0;
 }
 
-.navbar a {
+nav a {
     font-weight: 600;
     text-decoration: none;
     font-size: 1rem;
     color: black;
 }
 
-.navbar li {
+nav li {
     width: 50%;
     padding-bottom: 15px;
     text-align: center;
@@ -67,17 +71,17 @@ nav {
     border-color: var(--gris);
 }
 
-.navbar li:hover {
+nav li:hover {
     border-color: var(--bleu);
     transition: 0.7s;
 }
 
-.navbar li:hover>a {
+nav li:hover>a {
     color: var(--bleu);
     transition: 0.7s;
 }
 
-/* <!--Menu--> */
+/* <!--nav--> */
 
 /* <!--inscription--> */
 
@@ -390,16 +394,18 @@ i.checked {
         order: 3;
     }
     /* <!--Inscription--> */
-    /* <!--Menu--> */
-    nav {
+    /* <!--menu--> */
+    .navbar {
         justify-content: flex-start;
         flex-wrap: nowrap;
         /* margin-top: -15px; */
     }
-    .navbar {
+    /* <!--menu--> */
+    /* <!--nav--> */
+    nav {
         margin-top: 0;
     }
-    .navbar li {
+    nav li {
         width: initial;
         padding-bottom: 0;
         margin: 0 20px;
@@ -408,21 +414,21 @@ i.checked {
         border-color: transparent;
         padding: 38px 0;
     }
-    .navbar ul {
+    nav ul {
         justify-content: flex-end;
         height: 100px;
         align-items: center;
         margin-right: 20px;
     }
-    .navbar li:hover {
+    nav li:hover {
         border-color: var(--bleu);
         transition: 0.7s;
     }
-    .navbar li:hover>a {
+    nav li:hover>a {
         color: var(--bleu);
         transition: 0.7s;
     }
-    /* <!--Menu--> */
+    /* <!--nav--> */
     /* <!--Titre & sous titre--> */
     .title-header {
         margin-top: 0px;
@@ -475,7 +481,11 @@ i.checked {
 
 @media screen and (min-width:992px) {}
 
+<<<<<<< HEAD
 @media screen and (min-width:1200px) {}
+=======
+@media screen and (min-width:992px) {}
+>>>>>>> fix
 
 @media screen and (min-width:1400px) {
     /* body {
