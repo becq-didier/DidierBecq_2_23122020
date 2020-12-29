@@ -24,7 +24,7 @@ header {
     width: 110px;
 }
 
-/* <!--Logo--> */
+/* <!--fin Logo--> */
 
 /* <!--Menu--> */
 
@@ -35,7 +35,7 @@ header {
     justify-content: space-between;
 }
 
-/* <!--Menu--> */
+/* <!--fin Menu--> */
 
 /* <!--nav--> */
 
@@ -81,7 +81,7 @@ nav li:hover>a {
     transition: 0.7s;
 }
 
-/* <!--nav--> */
+/* <!--fin nav--> */
 
 /* <!--inscription--> */
 
@@ -95,9 +95,9 @@ nav li:hover>a {
     font-weight: 800;
 }
 
-/* <!--inscription--> */
+/* <!--fin inscription--> */
 
-/* <!--Titre & sous titre--> */
+/* <!--titre & sous titre--> */
 
 h1 {
     margin: 0;
@@ -108,9 +108,9 @@ h1 {
     margin-top: 20px;
 }
 
-/* <!--Titre & sous titre--> */
+/* <!--fin titre & sous titre--> */
 
-/* <!--Recherche--> */
+/* <!--recherche--> */
 
 .recherche-header {
     margin-top: 30px;
@@ -157,9 +157,13 @@ h1 {
     transform: translateX(-15px);
 }
 
-/* <!--Recherche--> */
+button {
+    cursor: pointer;
+}
 
-/* <!--Boutons de filtres--> */
+/* <!-- fin Recherche --> */
+
+/* <!-- boutons de filtres --> */
 
 .filter-button-box {
     display: flex;
@@ -202,6 +206,10 @@ h1 {
     z-index: -1;
 }
 
+.filter-btn {
+    cursor: pointer;
+}
+
 .filter-btn i {
     font-size: 15px;
     color: var(--bleu);
@@ -220,9 +228,9 @@ h1 {
     background-color: transparent;
 }
 
-/* <!--Boutons de filtres--> */
+/* <!-- fin Boutons de filtres --> */
 
-/* <!--Information--> */
+/* <!-- information --> */
 
 .information {
     display: flex;
@@ -250,7 +258,7 @@ h1 {
     font-size: 10px;
 }
 
-/* <!--Information--> */
+/* <!-- fin Information --> */
 
 /* ********************** FIN HEADER *********************** */
 
@@ -260,10 +268,10 @@ h1 {
 
 .popular {
     background-color: var(--gris);
-    padding: 40px 20px;
+    padding: 30px 20px;
 }
 
-/* <!-- section populaires --> */
+/* <!-- fin section populaires --> */
 
 /* <!-- article populaire --> */
 
@@ -275,11 +283,19 @@ h1 {
     scale: 0.98;
     box-shadow: none;
     border: 1px solid rgba(50, 50, 50, 0.3);
+    transition: all 0.5s;
 }
 
 .hover-effect:active {
     box-shadow: inset 3px 3px 5px 0px rgba(50, 50, 50, 0.75);
+    transition: 0.5s;
 }
+
+article.hover-effect {
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 .popular article {
     display: flex;
     background-color: white;
@@ -289,7 +305,7 @@ h1 {
     box-shadow: 3px 3px 5px 2px rgba(50, 50, 50, 0.3);
 }
 
-/* <!-- article populaire --> */
+/* <!-- fin article populaire --> */
 
 /* <!-- titre populaires --> */
 
@@ -300,12 +316,11 @@ h1 {
     margin-bottom: 25px;
 }
 
-
 .popular-title h2 {
     font-size: 20px;
 }
 
-/* <!-- titre populaires --> */
+/* <!-- fin titre populaires --> */
 
 /* <!-- image populaire--> */
 
@@ -336,7 +351,7 @@ h1 {
     margin: 10px;
 }
 
-/* <!-- image populaire--> */
+/* <!-- fin image populaire--> */
 
 /* <!-- info populaire --> */
 
@@ -364,9 +379,11 @@ i.checked {
     color: var(--bleu)
 }
 
-/* <!-- info populaire --> */
+/* <!-- fin info populaire --> */
 
-/* <!-- section populaires --> */
+/* <!-- fin section populaires --> */
+
+
 
 /* ********************** FIN MAIN ************************* */
 
@@ -381,7 +398,13 @@ i.checked {
 - Grands écrans d'ordinateurs et télévisions
 */
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:600px) {
+    /* ********************** MAIN ************************* */
+
+    /* ********************** FIN MAIN ************************* */
+}
+
+@media screen and (min-width:700px) {
     body {
         margin-top: -50px;
     }
@@ -389,19 +412,18 @@ i.checked {
     header {
         margin: 50px;
     }
-    /* <!--Inscription--> */
+    /* <!-- inscription --> */
     .register {
         order: 3;
     }
-    /* <!--Inscription--> */
-    /* <!--menu--> */
+    /* <!-- fin inscription --> */
+    /* <!-- menu --> */
     .navbar {
         justify-content: flex-start;
         flex-wrap: nowrap;
-        /* margin-top: -15px; */
     }
-    /* <!--menu--> */
-    /* <!--nav--> */
+    /* <!-- fin menu --> */
+    /* <!-- nav --> */
     nav {
         margin-top: 0;
     }
@@ -428,13 +450,13 @@ i.checked {
         color: var(--bleu);
         transition: 0.7s;
     }
-    /* <!--nav--> */
-    /* <!--Titre & sous titre--> */
+    /* <!-- fin nav --> */
+    /* <!-- titre & sous titre --> */
     .title-header {
         margin-top: 0px;
     }
-    /* <!--Titre & sous titre--> */
-    /* <!--Recherche--> */
+    /* <!-- fin titre & sous titre --> */
+    /* <!-- recherche --> */
     .search-button {
         display: block;
     }
@@ -445,13 +467,14 @@ i.checked {
         width: 130px;
         border-radius: 0 1em 1em 0;
     }
-    /* <!--Recherche--> */
-    /* <!--Boutons de filtres--> */
+    /* <!-- fin recherche --> */
+    /* <!-- boutons de filtres --> */
     .filter-button-box h2 {
         flex-basis: 90px;
     }
-    /* <!--Boutons de filtres--> */
+    /* <!-- fin boutons de filtres --> */
     /* ********************** FIN HEADER *********************** *
+    /* ********************** MAIN ***************************** */
     /* <!-- section populaires --> */
     .popular {
         display: flex;
@@ -460,35 +483,32 @@ i.checked {
         margin: 20px;
         justify-content: start;
     }
-    /* <!-- section populaires --> */
+    /* <!-- section populaire --> */
+    .popular-title h2 {
+        margin-left: 20px;
+    }
+    /* <!-- fin section populaire --> */
     /* <!-- article populaire --> */
     .popular article {
-        max-width: 286px;
-        /*324px; */
+        width: 45%;
         margin: 10px;
     }
-    /* <!-- article populaire --> */
+    /* <!-- fin article populaire --> */
     /* <!-- titre populaires --> */
     .popular-title {
         flex-basis: 100%;
+        margin-bottom: 0;
     }
-    /* <!-- titre populaires --> */
-    /* ********************** MAIN ***************************** */
+    /* <!-- fin titre populaires --> */
+    /* <!-- fin section populaires --> */
+
     /* ********************** FIN MAIN ************************* */
     /* ********************** FOOTER *************************** */
     /* ********************** FIN FOOTER *********************** */
 }
 
-@media screen and (min-width:992px) {}
+@media screen and (min-width:1200px) {
+    /* ********************** MAIN ***************************** */
 
-<<<<<<< HEAD
-@media screen and (min-width:1200px) {}
-=======
-@media screen and (min-width:992px) {}
->>>>>>> fix
-
-@media screen and (min-width:1400px) {
-    /* body {
-        margin: -50px 10% 0 10%;
-    } */
+    /* ********************** FIN MAIN ***************************** */
 }
