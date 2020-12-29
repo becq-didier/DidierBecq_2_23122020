@@ -8,10 +8,14 @@
     /* Police 'Raleway' pour l'ensemble du site */
 }
 
+body {
+    margin: 0;
+}
+
 /* ********************** HEADER *************************** */
 
 header {
-    margin: 15px;
+    margin: 15px 23px;
 }
 
 /* <!--Logo--> */
@@ -24,36 +28,40 @@ header {
 
 /* <!--Menu--> */
 
-nav {
+.navbar {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 
-.navbar {
+/* <!--Menu--> */
+
+/* <!--nav--> */
+
+nav {
     flex-basis: 100%;
     margin-top: 25px;
 }
 
-.navbar ul {
+nav ul {
     display: flex;
     justify-content: space-between;
     margin: 0;
 }
 
-.navbar ul {
+nav ul {
     padding-left: 0;
 }
 
-.navbar a {
+nav a {
     font-weight: 600;
     text-decoration: none;
     font-size: 1rem;
     color: black;
 }
 
-.navbar li {
+nav li {
     width: 50%;
     padding-bottom: 15px;
     text-align: center;
@@ -63,17 +71,17 @@ nav {
     border-color: var(--gris);
 }
 
-.navbar li:hover {
+nav li:hover {
     border-color: var(--bleu);
     transition: 0.7s;
 }
 
-.navbar li:hover>a {
+nav li:hover>a {
     color: var(--bleu);
     transition: 0.7s;
 }
 
-/* <!--Menu--> */
+/* <!--nav--> */
 
 /* <!--inscription--> */
 
@@ -248,6 +256,118 @@ h1 {
 
 /* ********************** MAIN ***************************** */
 
+/* <!-- section populaires --> */
+
+.popular {
+    background-color: var(--gris);
+    padding: 40px 20px;
+}
+
+/* <!-- section populaires --> */
+
+/* <!-- article populaire --> */
+
+.hover-effect {
+    border: 1px solid transparent;
+}
+
+.hover-effect:hover {
+    scale: 0.98;
+    box-shadow: none;
+    border: 1px solid rgba(50, 50, 50, 0.3);
+}
+
+.hover-effect:active {
+    box-shadow: inset 3px 3px 5px 0px rgba(50, 50, 50, 0.75);
+}
+.popular article {
+    display: flex;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 25px;
+    max-width: 732px;
+    box-shadow: 3px 3px 5px 2px rgba(50, 50, 50, 0.3);
+}
+
+/* <!-- article populaire --> */
+
+/* <!-- titre populaires --> */
+
+.popular-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+
+.popular-title h2 {
+    font-size: 20px;
+}
+
+/* <!-- titre populaires --> */
+
+/* <!-- image populaire--> */
+
+.popular-photo {
+    width: 120px;
+    height: 130px;
+    margin: 5px;
+}
+
+.popular-photo img {
+    width: 120px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+}
+
+.popular-info h3 {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.popular-info p {
+    margin-top: 0px;
+    font-size: 12px;
+}
+
+.popular-info h3, p, .popular-star {
+    margin: 10px;
+}
+
+/* <!-- image populaire--> */
+
+/* <!-- info populaire --> */
+
+.popular-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: auto;
+}
+
+.popular-price {
+    flex-basis: 100%;
+}
+
+.euro {
+    font-weight: bold;
+}
+
+.popular-star i {
+    color: var(--gris);
+}
+
+i.checked {
+    color: var(--bleu)
+}
+
+/* <!-- info populaire --> */
+
+/* <!-- section populaires --> */
+
 /* ********************** FIN MAIN ************************* */
 
 /* ********************** FOOTER *************************** */
@@ -274,16 +394,18 @@ h1 {
         order: 3;
     }
     /* <!--Inscription--> */
-    /* <!--Menu--> */
-    nav {
+    /* <!--menu--> */
+    .navbar {
         justify-content: flex-start;
         flex-wrap: nowrap;
         /* margin-top: -15px; */
     }
-    .navbar {
+    /* <!--menu--> */
+    /* <!--nav--> */
+    nav {
         margin-top: 0;
     }
-    .navbar li {
+    nav li {
         width: initial;
         padding-bottom: 0;
         margin: 0 20px;
@@ -292,21 +414,21 @@ h1 {
         border-color: transparent;
         padding: 38px 0;
     }
-    .navbar ul {
+    nav ul {
         justify-content: flex-end;
         height: 100px;
         align-items: center;
         margin-right: 20px;
     }
-    .navbar li:hover {
+    nav li:hover {
         border-color: var(--bleu);
         transition: 0.7s;
     }
-    .navbar li:hover>a {
+    nav li:hover>a {
         color: var(--bleu);
         transition: 0.7s;
     }
-    /* <!--Menu--> */
+    /* <!--nav--> */
     /* <!--Titre & sous titre--> */
     .title-header {
         margin-top: 0px;
@@ -329,21 +451,44 @@ h1 {
         flex-basis: 90px;
     }
     /* <!--Boutons de filtres--> */
-    /* ********************** FIN HEADER *********************** */
+    /* ********************** FIN HEADER *********************** *
+    /* <!-- section populaires --> */
+    .popular {
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 40px;
+        margin: 20px;
+        justify-content: start;
+    }
+    /* <!-- section populaires --> */
+    /* <!-- article populaire --> */
+    .popular article {
+        max-width: 286px;
+        /*324px; */
+        margin: 10px;
+    }
+    /* <!-- article populaire --> */
+    /* <!-- titre populaires --> */
+    .popular-title {
+        flex-basis: 100%;
+    }
+    /* <!-- titre populaires --> */
     /* ********************** MAIN ***************************** */
     /* ********************** FIN MAIN ************************* */
     /* ********************** FOOTER *************************** */
     /* ********************** FIN FOOTER *********************** */
 }
 
-@media(min-width:768px) {}
+@media screen and (min-width:992px) {}
 
-@media screen and (min-width:992px) {
-    
-}
+<<<<<<< HEAD
+@media screen and (min-width:1200px) {}
+=======
+@media screen and (min-width:992px) {}
+>>>>>>> fix
 
-@media screen and (min-width:1200px) {
-    body {
+@media screen and (min-width:1400px) {
+    /* body {
         margin: -50px 10% 0 10%;
-    }
+    } */
 }
