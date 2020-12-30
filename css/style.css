@@ -411,7 +411,7 @@ i.checked {
 
 /* <!-- fin article hebergement --> */
 
-/* <!-- image herbergement --> */
+/* <!-- image hebergement --> */
 
 .hosting-photo {
     width: auto;
@@ -420,14 +420,14 @@ i.checked {
 
 .hosting-photo img {
     width: 100%;
-    height: 130px;
+    height: 115px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
-/* <!-- fin image herbergement--> */
+/* <!-- fin image hebergement--> */
 
-/* <!-- info herbergement --> */
+/* <!-- info hebergement --> */
 
 .hosting-info {
     display: flex;
@@ -447,7 +447,7 @@ i.checked {
     color: var(--bleu);
 }
 
-/* <!-- info herbergement --> */
+/* <!-- info hebergement --> */
 
 /* <!-- afficher plus --> */
 
@@ -481,7 +481,7 @@ i.checked {
 
 @media screen and (min-width:600px) {
     /* ********************** MAIN ************************* */
-    /* <!-- section herbergement --> */
+    /* <!-- section hebergement --> */
     .hosting {
         display: flex;
         flex-wrap: wrap;
@@ -499,7 +499,7 @@ i.checked {
         margin: 10px;
     }
     /* <!-- fin article hosting --> */
-    /* <!-- fin section herbergement --> */
+    /* <!-- fin section hebergement --> */
     /* ********************** FIN MAIN ************************* */
 }
 
@@ -600,7 +600,7 @@ i.checked {
     }
     /* <!-- fin titre populaires --> */
     /* <!-- fin section populaires --> */
-    /* <!-- section herbergement --> */
+    /* <!-- section hebergement --> */
     .hosting {
         margin: 20px;
     }
@@ -608,7 +608,7 @@ i.checked {
     .show-more {
         margin: 40px 30px;
     }
-    /* <!-- fin section herbergement --> */
+    /* <!-- fin section hebergement --> */
     /* ********************** FIN MAIN ************************* */
     /* ********************** FOOTER *************************** */
     /* ********************** FIN FOOTER *********************** */
@@ -636,7 +636,7 @@ i.checked {
     }
     /* <!-- fin article populaire --> */
     /* <!-- fin section populaires --> */
-    /* <!-- section herbergement --> */
+    /* <!-- section hebergement --> */
     .hosting {
         width: 70%;
         border-radius: 40px;
@@ -645,6 +645,6 @@ i.checked {
     .hosting article {
         width: 30%;
     }
-    /* <!-- fin section herbergement --> */
+    /* <!-- fin section hebergement --> */
     /* ********************** FIN MAIN ***************************** */
 }
