@@ -57,7 +57,7 @@ nav ul {
 nav a {
     font-weight: 600;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 0.9em;
     color: black;
 }
 
@@ -181,7 +181,7 @@ button {
 
 .filter-button-box h2 {
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 1.2em;
     font-weight: 800;
     flex-basis: 100%;
 }
@@ -211,17 +211,21 @@ button {
 }
 
 .filter-btn i {
-    font-size: 15px;
+    font-size: 0.95em;
     color: var(--bleu);
 }
 
 .filter-btn:hover {
     transition: all 0.3s;
-    z-index: 0;
+    /* z-index: 0; */
     background-color: var(--bleuclair);
     transform: scale(1.05);
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, .3);
     text-shadow: 0px -1px 1px #bdb5b4, 1px 1px 1px white;
+}
+
+.filter-btn:hover span {
+    border-color: var(--bleuclair);
 }
 
 .filter-btn:active {
@@ -255,7 +259,7 @@ button {
     border-radius: 50px;
     margin-right: 10px;
     color: var(--bleu);
-    font-size: 10px;
+    font-size: 0.8em;
 }
 
 /* <!-- fin Information --> */
@@ -280,15 +284,17 @@ button {
 }
 
 .hover-effect:hover {
-    scale: 0.98;
+    transform: scale(0.99);
     box-shadow: none;
     border: 1px solid rgba(50, 50, 50, 0.3);
-    transition: all 0.5s;
+    transition-property: transform, box-shadow, border;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
 }
 
 .hover-effect:active {
     box-shadow: inset 3px 3px 5px 0px rgba(50, 50, 50, 0.75);
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 article.hover-effect {
@@ -302,7 +308,7 @@ article.hover-effect {
     margin-top: 10px;
     border-radius: 25px;
     max-width: 732px;
-    box-shadow: 3px 3px 5px 2px rgba(50, 50, 50, 0.3);
+    box-shadow: 3px 3px 10px 2px rgba(50, 50, 50, 0.1);
 }
 
 /* <!-- fin article populaire --> */
@@ -317,7 +323,7 @@ article.hover-effect {
 }
 
 .popular-title h2 {
-    font-size: 20px;
+    font-size: 1.3em;
 }
 
 /* <!-- fin titre populaires --> */
@@ -339,16 +345,16 @@ article.hover-effect {
 
 .popular-info h3 {
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 0.95em;
 }
 
 .popular-info p {
     margin-top: 0px;
-    font-size: 12px;
+    font-size: 0.75em;
 }
 
 .popular-info h3, p, .popular-star {
-    margin: 10px;
+    margin: 10px 10px 10px 0;
 }
 
 /* <!-- fin image populaire--> */
@@ -390,7 +396,7 @@ i.checked {
 }
 
 .hosting h2 {
-    font-size: 20px;
+    font-size: 1.2em;
 }
 
 /* <!-- article hebergement --> */
@@ -402,7 +408,7 @@ i.checked {
     margin-top: 10px;
     border-radius: 25px;
     max-width: 732px;
-    box-shadow: 3px 3px 5px 2px rgba(50, 50, 50, 0.3);
+    box-shadow: 3px 3px 10px 2px rgba(50, 50, 50, 0.1);
 }
 
 .hosting-info h3, .hosting p, .hosting-star {
@@ -490,7 +496,7 @@ i.checked {
     /* <!-- titre h2 --> */
     .hosting h2 {
         flex-basis: 100%;
-        margin-left: 30px;
+        margin-left: 10px;
     }
     /* <!-- fin titre h2 --> */
     /* <!-- article hosting --> */
@@ -509,7 +515,7 @@ i.checked {
     }
     /* ********************** HEADER **************************** */
     header {
-        margin: 50px;
+        margin: 50px 0 0 50px;
     }
     /* <!-- inscription --> */
     .register {
@@ -584,7 +590,7 @@ i.checked {
     }
     /* <!-- section populaire --> */
     .popular-title h2 {
-        margin-left: 20px;
+        margin-left: 10px;
     }
     /* <!-- fin section populaire --> */
     /* <!-- article populaire --> */
@@ -606,7 +612,7 @@ i.checked {
     }
     /* <!-- afficher plus --> */
     .show-more {
-        margin: 40px 30px;
+        margin: 40px 10px;
     }
     /* <!-- fin section hebergement --> */
     /* ********************** FIN MAIN ************************* */
@@ -619,6 +625,7 @@ i.checked {
     main {
         display: flex;
         flex-direction: row-reverse;
+        justify-content: center;
     }
     /* <!-- section populaires --> */
     .popular {
