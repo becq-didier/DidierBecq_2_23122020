@@ -540,6 +540,53 @@ i.checked {
 
 /* ********************** FOOTER *************************** */
 
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 25px;
+    background-color: var(--gris);
+}
+
+footer a {
+    font-size: 0.9em;
+    padding-bottom: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+footer div {
+    margin-right: 40px;
+    width: 250px;
+}
+
+/* <!-- a propos --> */
+
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+/* <!-- fin a propos --> */
+
+/* <!-- nos hébergements --> */
+
+.our-hostings {
+    display: flex;
+    flex-direction: column;
+}
+
+/* <!-- fin nos hébergements --> */
+
+/* <!-- assistance --> */
+
+.assistance {
+    display: flex;
+    flex-direction: column;
+}
+
+/* <!-- fin assistance --> */
+
 /* ********************** FIN FOOTER *********************** */
 
 /*Nous retrouvons 4 breaking-points :
@@ -590,6 +637,11 @@ i.checked {
     /* <!-- fin article activité --> */
     /* <!-- fin section activité --> */
     /* ********************** FIN MAIN ************************* */
+    /* ********************** FOOTER *************************** */
+    footer {
+        padding-left: 40px;
+    }
+    /* ********************** FIN FOOTER *********************** */
 }
 
 @media screen and (min-width:700px) {
@@ -712,6 +764,9 @@ i.checked {
     /*<!-- fin section activité -->*/
     /* ********************** FIN MAIN ************************* */
     /* ********************** FOOTER *************************** */
+    footer{
+        flex-wrap: nowrap;
+    }
     /* ********************** FIN FOOTER *********************** */
 }
 
@@ -812,4 +867,10 @@ i.checked {
     /* <!-- fin image activité --> */
     /* <!-- fin section activité --> */
     /* ********************** FIN MAIN ***************************** */
+    /* ********************** FOOTER ******************************* */
+    footer div {
+        margin-right: 0;
+        min-width: 430px;
+    }
+    /* ********************** FIN FOOTER *************************** */
 }
