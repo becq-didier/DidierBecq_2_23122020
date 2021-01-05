@@ -1,9 +1,6 @@
 /*----------------------------------------- Variable couleur -----------------------------------------*/
 
 * {
-  --bleu: #0065fc;
-  --bleuclair: #deebff;
-  --gris: #f2f2f2;
   font-family: "Raleway", sans-serif;
   /* Police 'Raleway' pour l'ensemble du site */
 }
@@ -68,16 +65,16 @@ nav li {
   list-style-type: none;
   font-size: 1.1em;
   border-bottom: solid;
-  border-color: var(--gris);
+  border-color:  #f2f2f2;
 }
 
 nav li:hover {
-  border-color: var(--bleu);
+  border-color: #0065fc;
   transition: 0.7s;
 }
 
 nav li:hover > a {
-  color: var(--bleu);
+  color: #0065fc;
   transition: 0.7s;
 }
 
@@ -90,7 +87,7 @@ nav li:hover > a {
 }
 
 .register a {
-  color: var(--bleu);
+  color: #0065fc;
   cursor: pointer;
   font-weight: 800;
 }
@@ -131,7 +128,7 @@ h1 {
 .location-icon {
   width: 50px;
   height: 50px;
-  background-color: var(--gris);
+  background-color:  #f2f2f2;
   border-radius: 1em 0 0 1em;
 }
 
@@ -139,7 +136,7 @@ h1 {
   flex: 1;
   height: 50px;
   max-width: 250px;
-  border: solid 1px var(--gris);
+  border: solid 1px  #f2f2f2;
 }
 
 .search-button {
@@ -152,7 +149,7 @@ h1 {
   height: 50px;
   border-style: none;
   border-radius: 1em;
-  background-color: var(--bleu);
+  background-color: #0065fc;
   color: white;
   transform: translateX(-15px);
 }
@@ -176,7 +173,7 @@ button {
   align-items: center;
   margin: 0 10px 10px 0;
   border-radius: 2em;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* -webkit-tap-highlight-color: rgba(0, 0, 0, 0); */
 }
 
 .filter-button-box h2 {
@@ -190,13 +187,13 @@ button {
   width: 1em;
   border-radius: 2em;
   padding: 17px;
-  background-color: var(--bleuclair);
+  background-color: #deebff;
 }
 
 .filter-btn span {
   border-style: solid;
   border-width: 2px;
-  border-color: var(--gris);
+  border-color:  #f2f2f2;
   border-radius: 2em;
   padding: 13px 20px 13px 45px;
   text-transform: capitalize;
@@ -212,19 +209,19 @@ button {
 
 .filter-btn i {
   font-size: 0.95em;
-  color: var(--bleu);
+  color: #0065fc;
 }
 
 .filter-btn:hover {
   transition: all 0.3s;
-  background-color: var(--bleuclair);
+  background-color: #deebff;
   transform: scale(1.05);
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
   text-shadow: 0px -1px 1px #bdb5b4, 1px 1px 1px white;
 }
 
 .filter-btn:hover span {
-  border-color: var(--bleuclair);
+  border-color: #deebff;
 }
 
 .filter-btn:active {
@@ -254,10 +251,10 @@ button {
 .info-btn {
   text-align: center;
   padding: 10px 15px;
-  border: solid 1px var(--gris);
+  border: solid 1px  #f2f2f2;
   border-radius: 50px;
   margin-right: 10px;
-  color: var(--bleu);
+  color: #0065fc;
   font-size: 0.8em;
 }
 
@@ -270,7 +267,7 @@ button {
 /* <!-- section populaires --> */
 
 .popular {
-  background-color: var(--gris);
+  background-color:  #f2f2f2;
   padding: 20px 20px;
 }
 
@@ -279,7 +276,7 @@ button {
 /* <!-- article populaire --> */
 
 .hover-effect {
-  border: 1px solid var(--gris);
+  border: 1px solid  #f2f2f2;
 }
 
 .hover-effect:hover {
@@ -298,7 +295,7 @@ button {
 
 article a.hover-effect {
   cursor: pointer;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* -webkit-tap-highlight-color: rgba(0, 0, 0, 0); */
 }
 
 .popular article a {
@@ -380,11 +377,11 @@ p,
 }
 
 .popular-star i {
-  color: var(--gris);
+  color:  #f2f2f2;
 }
 
 i.checked {
-  color: var(--bleu);
+  color: #0065fc;
 }
 
 /* <!-- fin info populaire --> */
@@ -452,11 +449,11 @@ i.checked {
 }
 
 .hosting-star i {
-  color: var(--gris);
+  color:  #f2f2f2;
 }
 
 .hosting-star i.checked {
-  color: var(--bleu);
+  color: #0065fc;
 }
 
 /* <!-- info hebergement --> */
@@ -557,7 +554,7 @@ footer {
   flex-wrap: wrap;
   justify-content: left;
   padding: 25px;
-  background-color: var(--gris);
+  background-color:  #f2f2f2;
 }
 
 footer a {
@@ -695,11 +692,11 @@ footer div {
     margin-right: 20px;
   }
   nav li:hover {
-    border-color: var(--bleu);
+    border-color: #0065fc;
     transition: 0.7s;
   }
   nav li:hover > a {
-    color: var(--bleu);
+    color: #0065fc;
     transition: 0.7s;
   }
   /* <!-- fin nav --> */
@@ -810,7 +807,7 @@ footer div {
   .hosting {
     width: 60%;
     border-radius: 40px;
-    background-color: var(--gris);
+    background-color:  #f2f2f2;
   }
   .hosting article {
     width: 30%;
@@ -827,9 +824,7 @@ footer div {
   }
   /* <!-- article activité --> */
   .activity article {
-    /* margin: 0px 20px; */
     width: 100%;
-    align-items: space-between;
     margin: 0;
   }
   .activity article:nth-child(2) {
