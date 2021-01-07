@@ -14,8 +14,8 @@ Un nouveau design basé sur les principes du Material Design vient d’être pro
   <img src="images\Docs-Projet2-Reservia\iPhone8.png" width="64.7" />
 </p>
 
------------------
-[Maquettes desktop et mobiles du site Reservia](images\Docs-Projet2-Reservia\images.zip)
+[Maquettes desktop et mobiles du site Reservia](https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P2+HTML+%26+CSS/Projet+2+-+Reservia+FR.zip)
+
 -----------------
 ## __Fonctionnalités__
 >* Les usagers peuvent rechercher des hébergements dans la ville de leur choix.\
