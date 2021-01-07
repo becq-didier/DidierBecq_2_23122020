@@ -1,5 +1,6 @@
 # [`Reservia`](https://github.com/becq-didier/Reservia)
-## [`PROJET N°2 OPENCLASSROMS`](https://openclassrooms.com)` - Transformez une maquette en site web`
+## [`PROJET N°2 OPENCLASSROMS`](https://openclassrooms.com)
+## `Transformez une maquette en site web`
 -----------------
 ## __Scénario__
 
@@ -9,8 +10,8 @@ Les hébergements peuvent également être filtrés par thématique, par exemple
 Un nouveau design basé sur les principes du Material Design vient d’être proposé par Loïc, designer UI.
 
 <p float="left">
-  <img src="images\Docs-Projet2-Reservia\Desktop.png" width="900" />
-  <img src="images\Docs-Projet2-Reservia\iPhone8.png" width="97.05" />
+  <img src="images\Docs-Projet2-Reservia\Desktop.png" width="600" />
+  <img src="images\Docs-Projet2-Reservia\iPhone8.png" width="64.7" />
 </p>
 
 -----------------
