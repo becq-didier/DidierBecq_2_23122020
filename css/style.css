@@ -65,7 +65,7 @@ nav li {
   list-style-type: none;
   font-size: 1.1em;
   border-bottom: solid;
-  border-color:  #f2f2f2;
+  border-color: #f2f2f2;
 }
 
 nav li:hover {
@@ -73,7 +73,7 @@ nav li:hover {
   transition: 0.7s;
 }
 
-nav li:hover > a {
+nav li:hover>a {
   color: #0065fc;
   transition: 0.7s;
 }
@@ -128,7 +128,7 @@ h1 {
 .location-icon {
   width: 50px;
   height: 50px;
-  background-color:  #f2f2f2;
+  background-color: #f2f2f2;
   border-radius: 1em 0 0 1em;
 }
 
@@ -136,7 +136,7 @@ h1 {
   flex: 1;
   height: 50px;
   max-width: 250px;
-  border: solid 1px  #f2f2f2;
+  border: solid 1px #f2f2f2;
 }
 
 .search-button {
@@ -193,7 +193,7 @@ button {
 .filter-btn span {
   border-style: solid;
   border-width: 2px;
-  border-color:  #f2f2f2;
+  border-color: #f2f2f2;
   border-radius: 2em;
   padding: 13px 20px 13px 45px;
   text-transform: capitalize;
@@ -251,7 +251,7 @@ button {
 .info-btn {
   text-align: center;
   padding: 10px 15px;
-  border: solid 1px  #f2f2f2;
+  border: solid 1px #f2f2f2;
   border-radius: 50px;
   margin-right: 10px;
   color: #0065fc;
@@ -267,7 +267,7 @@ button {
 /* <!-- section populaires --> */
 
 .popular {
-  background-color:  #f2f2f2;
+  background-color: #f2f2f2;
   padding: 20px 20px;
 }
 
@@ -276,7 +276,7 @@ button {
 /* <!-- article populaire --> */
 
 .hover-effect {
-  border: 1px solid  #f2f2f2;
+  border: 1px solid #f2f2f2;
 }
 
 .hover-effect:hover {
@@ -323,6 +323,10 @@ article a.hover-effect {
   font-size: 1.3em;
 }
 
+.popular-title i {
+  margin-right: 15px;
+}
+
 /* <!-- fin titre populaires --> */
 
 /* <!-- image populaire--> */
@@ -350,9 +354,7 @@ article a.hover-effect {
   font-size: 0.75em;
 }
 
-.popular-info h3,
-p,
-.popular-star {
+.popular-info h3, p, .popular-star {
   margin: 10px 10px 10px 0;
 }
 
@@ -377,7 +379,7 @@ p,
 }
 
 .popular-star i {
-  color:  #f2f2f2;
+  color: #f2f2f2;
 }
 
 i.checked {
@@ -412,9 +414,7 @@ i.checked {
   color: black;
 }
 
-.hosting-info h3,
-.hosting p,
-.hosting-star {
+.hosting-info h3, .hosting p, .hosting-star {
   margin: 5px 20px;
 }
 
@@ -449,7 +449,7 @@ i.checked {
 }
 
 .hosting-star i {
-  color:  #f2f2f2;
+  color: #f2f2f2;
 }
 
 .hosting-star i.checked {
@@ -514,6 +514,7 @@ i.checked {
   text-decoration: none;
   color: black;
 }
+
 .activity article {
   margin: 20px 0 20px 0;
 }
@@ -554,7 +555,7 @@ footer {
   flex-wrap: wrap;
   justify-content: left;
   padding: 25px;
-  background-color:  #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 footer a {
@@ -598,11 +599,10 @@ footer div {
 
 /* ********************** FIN FOOTER *********************** */
 
-/*Nous retrouvons 4 breaking-points :
-- Les très petits écrans (0 px et 768 px)
-- Tablettes (768 px - 991 px)
-- Ordinateurs (992 px - 1199 px)
-- Grands écrans d'ordinateurs et télévisions
+/*Nous retrouvons 3 breaking-points :
+- Les très petits écrans (< 700 px)
+- Tablettes et Ordinateurs (600 px - 700 px - 1199 px)
+- Grands écrans d'ordinateurs et télévisions (1200 px)
 */
 
 @media screen and (min-width: 600px) {
@@ -695,7 +695,7 @@ footer div {
     border-color: #0065fc;
     transition: 0.7s;
   }
-  nav li:hover > a {
+  nav li:hover>a {
     color: #0065fc;
     transition: 0.7s;
   }
@@ -728,8 +728,9 @@ footer div {
   .popular {
     display: flex;
     flex-wrap: wrap;
-    border-radius: 40px;
-    margin: 20px 20px 0 20px;
+    border-radius: 25px;
+    margin: 20px 40px 0 40px;
+    padding-right: 0;
     justify-content: start;
   }
   /* <!-- section populaire --> */
@@ -740,7 +741,7 @@ footer div {
   /* <!-- article populaire --> */
   .popular article {
     width: 45%;
-    margin: 10px;
+    padding: 10px;
   }
   /* <!-- fin article populaire --> */
   /* <!-- titre populaires --> */
@@ -791,6 +792,9 @@ footer div {
   .popular {
     flex-direction: column;
     width: 25%;
+    padding-right: 20px;
+    margin-right: 40px;
+    margin-left: auto;
   }
   /* <!-- titre populaires --> */
   .popular-title {
@@ -806,8 +810,10 @@ footer div {
   /* <!-- section hebergement --> */
   .hosting {
     width: 60%;
-    border-radius: 40px;
-    background-color:  #f2f2f2;
+    margin-left: 40px;
+    margin-right: auto;
+    border-radius: 25px;
+    background-color: #f2f2f2;
   }
   .hosting article {
     width: 30%;
@@ -877,7 +883,7 @@ footer div {
   /* ********************** FOOTER ******************************* */
   footer div {
     margin-right: 0;
-    min-width: 430px;
+    min-width: 33%;
   }
   /* ********************** FIN FOOTER *************************** */
 }
