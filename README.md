@@ -52,6 +52,7 @@ GitKraken est l'outil utilisé comme client Git.
 >* Un lien vers votre page web hébergée en ligne sur GitHub Pages ou GitLab Pages, pour présenter votre maquette. 
 
 [Validator.w3.org: becq-didier.github.io/DidierBecq_2_23122020](https://validator.w3.org/nu/?doc=https%3A%2F%2Fbecq-didier.github.io%2FDidierBecq_2_23122020%2Findex.html)
+
 [Service de validation CSS du W3C](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fbecq-didier.github.io%2FDidierBecq_2_23122020%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr)
 
 ###### [Aide mise en page README.md](https://github.com/Simplonline-foad/utiliser-markdown/blob/master/README.md)
